@@ -73,7 +73,7 @@ if __name__ == '__main__':
     
     log.info("Patching SDK")
     cmd = [patch_command, '-p1', '--binary', '--ignore-whitespace', '-i', "../sdk_12.1.diff"]
-    subprocess.call(cmd, cwd="external/sdk")
+    #subprocess.call(cmd, cwd="external/sdk")
     
     download_file('micro-ecc zip', MICRO_ECC, "_build/micro_ecc.zip")
     log.info("Extracting micro-ecc")
